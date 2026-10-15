@@ -36,3 +36,7 @@ input,textarea{width:100%;box-sizing:border-box;padding:12px;border-radius:12px;
 ::-webkit-scrollbar{width:8px}::-webkit-scrollbar-thumb{background:linear-gradient(var(--a),var(--b));border-radius:8px}
 .ico{width:72px;height:72px;border-radius:22%;display:block;margin:0 0 12px;object-fit:cover;box-shadow:0 8px 24px #0006,0 0 18px #22d3ee33}
 .hero .ico{width:96px;height:96px;margin:0 auto 14px}
+.legal h2,.legal h3{margin:24px 0 8px}
+.legal p,.legal li{line-height:1.8}
+.legal a{color:#67e8f9!important}
+.legal .maj{color:#8fa3cc;font-size:13px}
