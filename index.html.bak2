@@ -1,0 +1,66 @@
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CNS.corp</title>
+<style>
+body{margin:0;font-family:system-ui,sans-serif;background:#f5fbff;color:#0a2a66;line-height:1.55}
+.wrap{max-width:720px;margin:0 auto;padding:24px 18px 40px}
+h1{font-size:32px;margin:6px 0 2px;color:#0a3d91}h1 span{color:#00c2e0}
+.slogan{color:#5b7089;font-size:15px;margin-bottom:20px}
+h2{font-size:22px;color:#0a3d91;margin:30px 0 10px;border-bottom:2px solid #d6ebf4;padding-bottom:6px}
+.card{background:#fff;border:1px solid #d6ebf4;border-radius:18px;padding:18px;margin-bottom:14px;box-shadow:0 4px 14px rgba(0,120,160,.07)}
+.card h3{margin:0 0 8px;font-size:18px;color:#0a3d91}
+.card p{margin:8px 0;font-size:15px}
+ul{padding-left:20px;margin:8px 0;font-size:15px}li{margin:4px 0}
+.tag{display:inline-block;font-size:12px;padding:4px 10px;border-radius:12px;background:#e6f7fb;color:#0a7fa0;margin:2px 4px 2px 0}
+.btn{display:inline-block;margin-top:10px;padding:12px 18px;border-radius:14px;background:linear-gradient(135deg,#00c2e0,#2f6fe0);color:#fff;font-weight:600;font-size:15px;opacity:.6}
+.note{font-size:13px;color:#5b7089;margin-top:6px}
+.foot{margin-top:34px;font-size:12px;color:#5b7089;text-align:center}
+</style><style>.cns-logo{display:block;width:min(260px,70vw);margin:24px auto 8px;border-radius:14px}.cns-head{background:#000;padding:18px 0 6px;text-align:center}</style><style>body{margin:0;font-family:system-ui,sans-serif;color:#0a2a66;background:#fff;line-height:1.6}.cns-nav{position:sticky;top:0;z-index:9;background:#000;display:flex;justify-content:center;gap:18px;flex-wrap:wrap;padding:12px 10px}.cns-nav a{color:#7fd8ea;text-decoration:none;font-size:14px;font-weight:600}.cns-nav a:hover{color:#fff}main,section{max-width:920px;margin:0 auto;padding:18px}h1,h2{line-height:1.25}img{max-width:100%;height:auto}.cns-foot{background:#000;color:#9fb3c4;text-align:center;padding:28px 14px;font-size:13px}.cns-foot a{color:#7fd8ea;text-decoration:none;margin:0 10px}</style></head><body>
+<nav class="cns-nav"><a href="#accueil">Accueil</a><a href="#apps">Applications</a><a href="#tooole">TÕÕLé</a><a href="#gamezone">GameZone</a><a href="#contact-site">Contact</a></nav>
+
+<header class="cns-head"><img class="cns-logo" src="img/logo.png" alt="CNS.corp - Innover, Créer, Ensemble"></header>
+<div class="wrap">
+<h1>CNS<span>.corp</span></h1>
+<div class="slogan">Innover · Sécuriser · Construire l'avenir</div>
+
+<h2>Qui est CNS.corp</h2>
+<div class="card">
+<p><b>CNS.corp</b> est une entreprise burkinabè fondée par <b>ILBOUDO Régis Canisius</b>, Fondateur &amp; CEO.</p>
+<p>Notre mission : <i>vos données, notre priorité ; votre avenir, notre mission.</i></p>
+<p>Nous développons des applications pensées pour le quotidien des Burkinabè : communication, jeux et outils d'administration, en privilégiant la simplicité, la sécurité et des interfaces claires.</p>
+<p><span class="tag">Innover</span><span class="tag">Sécuriser</span><span class="tag">Construire l'avenir</span></p>
+</div>
+
+<h2>TÕÕLé : messagerie burkinabè</h2>
+<div class="card">
+<h3>TÕÕLé</h3>
+<p>TÕÕLé est une application de messagerie pensée pour faciliter la communication au Burkina Faso. Elle est née de longs tests et d'un travail soutenu.</p>
+<ul>
+<li>Connexion par email, avec un pseudo pour être retrouvé</li>
+<li>Discussions privées et groupes (rôles, description, invitations)</li>
+<li>Messages texte et vocaux (60 secondes maximum)</li>
+<li>Statuts texte visibles 24 heures</li>
+<li>Messages épinglés, partage et signalement pour la sécurité</li>
+<li>CANIX, l'assistant intégré, pour répondre à tes questions sur l'appli</li>
+<li>Thèmes de couleur, Français et English</li>
+</ul>
+<p class="note">Le lien de téléchargement sera ajouté dès que l'application sera publiée.</p>
+</div>
+
+<h2>GameZone : jeux</h2>
+<div class="card">
+<h3>GameZone</h3>
+<p>GameZone réunit des jeux inspirés de la culture burkinabè et des jeux de réflexion.</p>
+<ul>
+<li>Faso Rush : course sur les rails de Ouagadougou</li>
+<li>Écho du Griot : répète la mélodie</li>
+<li>Tam-Tam : frappe le rythme du tambour</li>
+<li>Labyrinthe Faso, Baobab, Éclat, Duel des Cauris, Territoire, Game-0</li>
+</ul>
+<span class="btn">Téléchargement bientôt disponible</span>
+<p class="note">Le lien de téléchargement sera ajouté dès que l'application sera publiée.</p>
+<a href="gamezone/index.html" style="display:inline-block;margin-top:14px;padding:14px 26px;border-radius:14px;background:#0a3d91;color:#fff;font-weight:700;text-decoration:none">Jouer en ligne</a>
+</div>
+
+<div class="foot">© 2026 CNS.corp – ILBOUDO Régis Canisius. Tous droits réservés.</div>
+</div><p style="text-align:center;margin:24px 0"><a href="https://ilboudoregis1-maker.github.io/CNS.corp/" style="color:#0a3d91;font-weight:700;text-decoration:none">Accéder à CNS.corp</a></p>
+<footer class="cns-foot"><div>© 2026 CNS.corp – ILBOUDO Régis Canisius · Burkina Faso</div><div style="margin-top:10px"><a href="conditions.html">Conditions d’utilisation</a><a href="politique.html">Politique de confidentialité</a></div></footer>
+</body></html>
