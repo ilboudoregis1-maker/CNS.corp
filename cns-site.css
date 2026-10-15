@@ -40,3 +40,9 @@ input,textarea{width:100%;box-sizing:border-box;padding:12px;border-radius:12px;
 .legal p,.legal li{line-height:1.8}
 .legal a{color:#67e8f9!important}
 .legal .maj{color:#8fa3cc;font-size:13px}
+.card{padding:20px 22px!important}
+.cns-nav{flex-wrap:nowrap!important;overflow-x:auto;justify-content:flex-start!important;white-space:nowrap;scrollbar-width:none;padding:8px 10px!important}
+.cns-nav::-webkit-scrollbar{display:none}
+.cns-nav a{flex:0 0 auto;padding:8px 12px!important}
+.cns-nav a:first-child{margin-left:auto}
+.cns-nav a:last-child{margin-right:auto}
