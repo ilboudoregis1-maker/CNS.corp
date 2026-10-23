@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TÕÕLé – Conditions et confidentialité</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#050d22;color:#dbe7ff;font:16px/1.55 system-ui,Segoe UI,Roboto,sans-serif}
+header{display:flex;align-items:center;gap:8px;padding:12px 16px;background:#081633;border-bottom:1px solid #16264a;position:sticky;top:0}
+header b{font-size:20px;color:#fff;margin-right:auto}
+header button{border:1px solid #17305f;background:#0a1a3c;color:#9fc4ff;border-radius:999px;padding:6px 14px;font-weight:700}
+header button.on{background:linear-gradient(135deg,#0a7cff,#00c2e0);color:#fff;border-color:transparent}
+main{max-width:760px;margin:0 auto;padding:26px 16px 10px}
+h1{text-align:center;font-size:28px;margin:0 0 6px;background:linear-gradient(90deg,#fff,#2fd0ff,#4a7dff);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.s{text-align:center;color:#8fa6cf;margin:0 0 20px}
+.c{background:#0a1a3c;border:1px solid #17305f;border-radius:20px;padding:20px}
+.d{font-size:13px;color:#8fa6cf}h3{font-size:17px;color:#fff;margin:20px 0 6px}.c p{margin:0;color:#c3d3f2}
+.n{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}
+.n button,.n a{flex:1;min-width:150px;text-align:center;text-decoration:none;padding:13px;border-radius:14px;font-weight:700;border:0;font-size:15px}
+.n button{background:linear-gradient(135deg,#0a7cff,#00c2e0);color:#fff}.n a{background:#0a1a3c;border:1px solid #17305f;color:#9fc4ff}
+footer{text-align:center;color:#6f86b3;font-size:13px;padding:10px 16px 30px}
+</style></head><body>
+<header><b>TÕÕLé</b><button id="bf">FR</button><button id="be">EN</button></header>
+<main><h1 id="h"></h1><p class="s" id="s"></p><div class="c" id="c"></div>
+<div class="n"><button id="o"></button><a href="./" id="a">CNS.corp</a></div></main>
+<footer>© 2026 CNS.corp · TÕÕLé · Burkina Faso</footer>
+<script>
+var M="cns.corp7@gmail.com",D={fr:{terms:["Conditions d’utilisation","Les règles d’usage de l’application TÕÕLé.","Dernière mise à jour : 23 octobre 2026","Politique de confidentialité","Conditions d’utilisation",[
+["1. Éditeur","TÕÕLé est une application de messagerie burkinabè éditée par CNS.corp, dirigée par ILBOUDO Régis Canisius, Fondateur & CEO. Contact : "+M+"."],
+["2. Objet","Ces conditions encadrent l’utilisation de TÕÕLé : messages texte et vocaux, groupes, statuts, appels et assistant CANIX AI."],
+["3. Compte","Tu t’engages à fournir des informations exactes (numéro de téléphone et pseudo), à protéger ton mot de passe et à ne pas le partager. Tu es responsable de l’activité de ton compte."],
+["4. Règles d’usage","Il est interdit de harceler, menacer ou insulter ; de diffuser des contenus illégaux, violents, pornographiques ou haineux ; de faire des arnaques, du hameçonnage ou du spam ; d’usurper une identité ; de publier les données personnelles d’autrui sans accord ; de contourner la sécurité de l’application."],
+["5. Signalement et modération","Tu peux signaler un message ou un profil. Selon la gravité : avertissement, suspension temporaire ou blocage définitif."],
+["6. Disponibilité","TÕÕLé est fourni en l’état pendant sa phase de développement et de test. Aucune disponibilité permanente n’est garantie."],
+["7. Propriété intellectuelle","L’application, son nom, son logo et CANIX AI appartiennent à CNS.corp. Tes messages et contenus restent les tiens ; tu nous autorises seulement à les faire fonctionner dans l’application."],
+["8. Modifications","Nous pouvons modifier ces conditions. Les changements importants seront présentés dans l’application."],
+["9. Droit applicable","Ces conditions sont régies par le droit burkinabè. Contact : "+M+"."]]],
+privacy:["Politique de confidentialité","Comment l’application TÕÕLé traite tes données.","Dernière mise à jour : 23 octobre 2026","Conditions d’utilisation","Politique de confidentialité",[
+["1. Responsable","CNS.corp (Burkina Faso), représentée par ILBOUDO Régis Canisius, est responsable de l’application TÕÕLé. Contact : "+M+"."],
+["2. Données traitées","Numéro de téléphone, pseudo, photo de profil, messages privés et de groupe, messages vocaux, statuts, contacts enregistrés et données techniques minimales (dates de connexion)."],
+["3. Pas de vente de données","TÕÕLé ne vend pas tes données et n’affiche pas de publicité dans les discussions."],
+["4. Durées de conservation","Messages privés : 20 jours sur nos serveurs, puis suppression. Messages de groupe : 15 jours. Vocaux : 15 jours. Statuts : 24 heures maximum. Les messages déjà reçus peuvent rester sur ton téléphone pour une consultation hors connexion ; ces copies disparaissent à la désinstallation."],
+["5. Signalements","Tu peux signaler un message ou un profil. Seul le message signalé, avec son motif, est transmis à l’équipe pour examen. Nous ne lisons pas les conversations en dehors de ces signalements."],
+["6. Tes droits","Tu peux demander l’accès, la correction ou la suppression de ton compte et de tes données en écrivant à "+M+". Après suppression, les données liées sont effacées des serveurs dans les délais ci-dessus."],
+["7. Sécurité","Nous appliquons des mesures raisonnables pour protéger les données, mais aucun système n’est totalement infaillible. Ne partage jamais ton mot de passe."],
+["8. Modifications","Nous pouvons mettre à jour cette politique. Les changements importants seront présentés dans l’application."],
+["9. Site CNS.corp","Le site CNS.corp a sa propre politique, distincte de celle de TÕÕLé."]]]},
+en:{terms:["Terms of Use","The rules for using the TÕÕLé app.","Last updated: October 23, 2026","Privacy Policy","Terms of Use",[
+["1. Publisher","TÕÕLé is a Burkinabè messaging app published by CNS.corp, led by ILBOUDO Régis Canisius, Founder & CEO. Contact: "+M+"."],
+["2. Purpose","These terms govern the use of TÕÕLé: text and voice messages, groups, statuses, calls and the CANIX AI assistant."],
+["3. Account","You agree to provide accurate information (phone number and username), to protect your password and not to share it. You are responsible for the activity on your account."],
+["4. Acceptable use","You must not harass, threaten or insult anyone; post illegal, violent, pornographic or hateful content; run scams, phishing or spam; impersonate someone; publish other people’s personal data without consent; or try to bypass the app’s security."],
+["5. Reporting and moderation","You can report a message or a profile. Depending on severity: a warning, a temporary suspension or a permanent ban."],
+["6. Availability","TÕÕLé is provided as is during its development and testing phase. Permanent availability is not guaranteed."],
+["7. Intellectual property","The app, its name, its logo and CANIX AI belong to CNS.corp. Your messages and content remain yours; you only allow us to operate them within the app."],
+["8. Changes","We may change these terms. Significant changes will be shown in the app."],
+["9. Governing law","These terms are governed by the law of Burkina Faso. Contact: "+M+"."]]],
+privacy:["Privacy Policy","How the TÕÕLé app handles your data.","Last updated: October 23, 2026","Terms of Use","Privacy Policy",[
+["1. Controller","CNS.corp (Burkina Faso), represented by ILBOUDO Régis Canisius, is responsible for the TÕÕLé app. Contact: "+M+"."],
+["2. Data we process","Phone number, username, profile photo, private and group messages, voice messages, statuses, saved contacts and minimal technical data (login dates)."],
+["3. No sale of data","TÕÕLé does not sell your data and shows no advertising inside conversations."],
+["4. Retention periods","Private messages: kept on our servers for 20 days, then deleted. Group messages: 15 days. Voice messages: 15 days. Statuses: 24 hours maximum. Messages already received may stay on your phone for offline viewing; these copies are removed when the app is uninstalled."],
+["5. Reports","You can report a message or a profile. Only the reported message, with its reason, is sent to the team for review. We do not read conversations outside these reports."],
+["6. Your rights","You can ask for access, correction or deletion of your account and data by writing to "+M+". After deletion, related data is erased from our servers within the periods above."],
+["7. Security","We apply reasonable measures to protect data, but no system is completely secure. Never share your password."],
+["8. Changes","We may update this policy. Significant changes will be shown in the app."],
+["9. CNS.corp website","The CNS.corp website has its own policy, separate from TÕÕLé’s."]]]}};
+var q=new URLSearchParams(location.search),doc=q.get("doc")=="privacy"?"privacy":"terms",lg=q.get("lang")=="en"?"en":"fr",$=function(i){return document.getElementById(i)};
+function go(){var d=D[lg][doc];document.documentElement.lang=lg;document.title="TÕÕLé – "+d[0];
+$("h").textContent=d[0];$("s").textContent=d[1];$("o").textContent=d[3];$("bf").className=lg=="fr"?"on":"";$("be").className=lg=="en"?"on":"";
+var h='<div class="d">'+d[2]+"</div>";d[5].forEach(function(s){h+="<h3>"+s[0]+"</h3><p>"+s[1]+"</p>"});$("c").innerHTML=h;
+history.replaceState(null,"","?doc="+doc+"&lang="+lg);window.scrollTo(0,0)}
+$("bf").onclick=function(){lg="fr";go()};$("be").onclick=function(){lg="en";go()};
+$("o").onclick=function(){doc=doc=="terms"?"privacy":"terms";go()};go();
+</script></body></html>
