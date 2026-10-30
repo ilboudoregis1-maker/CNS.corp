@@ -2,16 +2,222 @@
 <html lang="fr"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>TÕÕLé – Informations légales</title>
-<style>body{font-family:sans-serif;max-width:720px;margin:auto;padding:20px;line-height:1.6}h1{color:#0a7cff}</style>
-</head><body><div id="c"></div>
+<style>
+:root{--bg:#f4f6fb;--card:#fff;--fg:#1c1e21;--mut:#65676b;--bl:#0a7cff;--bd:#e4e6eb;--wa:#fff4e5;--wb:#f5a623}
+@media(prefers-color-scheme:dark){:root{--bg:#121316;--card:#1c1d21;--fg:#e4e6eb;--mut:#b0b3b8;--bd:#34363b;--wa:#2b2315;--wb:#f5a623}}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--fg);line-height:1.65}
+header{background:linear-gradient(135deg,#0a7cff,#0052cc);color:#fff;padding:28px 16px 22px;text-align:center}
+header b{font-size:28px;letter-spacing:1px}header div{opacity:.9;font-size:14px;margin-top:4px}
+main{max-width:780px;margin:-14px auto 0;padding:0 12px 40px}
+nav{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:0 0 14px}
+nav a{padding:9px 16px;background:var(--card);border:1px solid var(--bd);border-radius:22px;color:var(--bl);text-decoration:none;font-weight:600;font-size:14px}
+nav a.on{background:var(--bl);color:#fff;border-color:var(--bl)}
+article{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:22px 20px}
+h1{font-size:23px;margin:0 0 4px}h2{font-size:17px;margin:26px 0 6px;color:var(--bl)}
+.m{color:var(--mut);font-size:13px;margin:0 0 14px}
+.box{background:var(--wa);border-left:4px solid var(--wb);border-radius:8px;padding:12px 16px;margin:14px 0}
+.box ul{margin:6px 0 0;padding-left:20px}li{margin:5px 0}
+.ok{background:#eaf6ff;border-left-color:var(--bl)}@media(prefers-color-scheme:dark){.ok{background:#12263d}}
+footer{text-align:center;color:var(--mut);font-size:12px;margin-top:18px}
+a{color:var(--bl)}
+</style></head><body>
+<header><b>TÕÕLé</b><div id="sub"></div></header>
+<main><nav id="n"></nav><article id="c"></article><footer id="f"></footer></main>
 <script>
+var MAIL="cns.corp7@gmail.com",WA="+226 44 38 32 01",WAL="https://wa.me/22644383201";
 var p=new URLSearchParams(location.search);
 var d=p.get("doc")==="terms"?"terms":"privacy";
 var l=p.get("lang")==="en"?"en":"fr";
+var CT_FR='<p>CNS.corp<br>E-mail : <a href="mailto:'+MAIL+'">'+MAIL+'</a><br>WhatsApp TÕÕLé : <a href="'+WAL+'">'+WA+'</a></p>';
+var CT_EN=CT_FR.replace("E-mail","Email");
 var T={
-fr:{privacy:"<h1>Politique de confidentialité</h1><p>À COMPLÉTER : données collectées (numéro de téléphone, messages, médias), usage, stockage, partage, droits de l'utilisateur, contact.</p>",
-    terms:"<h1>Conditions d'utilisation</h1><p>À COMPLÉTER : règles d'usage, comptes, contenus interdits, responsabilités, suspension, contact.</p>"},
-en:{privacy:"<h1>Privacy Policy</h1><p>TO COMPLETE: data collected, usage, storage, sharing, user rights, contact.</p>",
-    terms:"<h1>Terms of Use</h1><p>TO COMPLETE: usage rules, accounts, prohibited content, liability, suspension, contact.</p>"}};
+fr:{sub:"Informations légales",tabs:{privacy:"Confidentialité",terms:"Conditions d'utilisation"},foot:"© 2026 CNS.corp – Tous droits réservés",
+privacy:`<h1>Politique de confidentialité</h1>
+<p class="m">Version 2.0 – Dernière mise à jour : 30 octobre 2026</p>
+<p>Chez TÕÕLé, nous voulons que vous sachiez exactement comment l'application fonctionne avant de l'utiliser. Cette page est écrite pour être lue : prenez le temps de la parcourir.</p>
+<div class="box"><b>⚠️ À savoir avant de commencer</b><ul>
+<li><b>Les messages sont supprimés de nos serveurs tous les 15 jours.</b> Si votre correspondant n'a pas reçu votre message dans ce délai (téléphone éteint, hors connexion, application désinstallée), <b>il ne lui sera plus jamais livré</b>.</li>
+<li><b>Nous ne pouvons pas récupérer</b> un message supprimé après 15 jours, ni restaurer une conversation perdue.</li>
+<li><b>Photos, vidéos, vocaux et fichiers</b> sont chiffrés sur votre téléphone avant l'envoi, puis stockés via un bot Telegram qui ne reçoit que des données chiffrées illisibles.</li>
+<li><b>Les appels vocaux/vidéo sont en cours de développement</b> : cette fonction n'est pas encore disponible.</li></ul></div>
+<div class="box ok"><b>🔒 Notre engagement</b><ul>
+<li>Nous ne lisons pas vos conversations et ne consultons pas vos médias.</li>
+<li>Nous ne vendons jamais vos données et n'affichons aucune publicité.</li>
+<li>Vous pouvez supprimer votre compte à tout moment, depuis l'application.</li></ul></div>
+<h2>1. Qui sommes-nous ?</h2>
+<p>TÕÕLé est une application de messagerie éditée par <b>CNS.corp</b>. CNS.corp est responsable du traitement des données décrit ci-dessous.</p>
+<h2>2. Les données que nous traitons</h2>
+<ul><li><b>Compte</b> : indicatif pays, numéro de téléphone, mot de passe (stocké sous forme protégée, jamais lisible par nous), nom et photo de profil que vous choisissez.</li>
+<li><b>Messages en transit</b> : le contenu chiffré de vos messages, le temps nécessaire à leur livraison (15 jours maximum).</li>
+<li><b>Informations techniques de fonctionnement</b> : identifiants de l'expéditeur et du destinataire, date et heure, taille des envois, état de présence (en ligne, « en train d'écrire »), jeton de notification de votre appareil. Ces informations sont indispensables pour acheminer un message.</li></ul>
+<p>Nous ne collectons <b>pas</b> votre position et ne lisons pas votre répertoire téléphonique à votre insu.</p>
+<h2>3. Messages : suppression automatique après 15 jours</h2>
+<p>Un message envoyé est conservé sur nos serveurs uniquement pour être livré. Il est <b>supprimé automatiquement au plus tard 15 jours</b> après son envoi, qu'il ait été reçu ou non. Concrètement :</p>
+<ul><li>si le destinataire se connecte dans les 15 jours, il reçoit le message, qui reste ensuite sur son appareil ;</li>
+<li>passé ce délai, le message est effacé de nos serveurs et <b>n'est plus récupérable</b>, par personne, y compris par nous ;</li>
+<li>nous ne gardons pas de copie de sauvegarde de vos conversations ; l'historique est conservé sur les appareils des participants. Si vous perdez ou réinitialisez votre téléphone, il peut être perdu définitivement.</li></ul>
+<h2>4. Photos, vidéos, vocaux et fichiers</h2>
+<p>Ces contenus sont <b>chiffrés sur votre appareil avant l'envoi</b>. Ils sont ensuite transférés vers un bot Telegram utilisé comme espace de stockage technique. Ce bot ne reçoit que des données chiffrées : il ne voit ni image, ni son, ni vidéo, seulement une suite de caractères illisible. Seule l'application du destinataire peut les déchiffrer et les afficher. Le message associé (y compris la référence vers le média) est supprimé de nos serveurs après 15 jours ; un média non reçu dans ce délai n'est plus accessible depuis l'application.</p>
+<p>Comme tout service tiers, Telegram applique ses propres conditions ; il traite uniquement des fichiers chiffrés pour le compte de TÕÕLé.</p>
+<h2>5. Confidentialité et sécurité de votre compte</h2>
+<ul><li>Le contenu de vos messages et médias est chiffré ; nous ne le consultons pas et nos équipes ne lisent pas vos conversations.</li>
+<li>Les connexions à nos serveurs sont sécurisées (HTTPS) et votre mot de passe est stocké sous forme protégée.</li>
+<li>Nous ne pouvons pas, et ne vous demanderons jamais, votre mot de passe. Méfiez-vous de toute personne qui prétend le contraire.</li>
+<li>Aucun système n'est infaillible. Protégez votre téléphone, choisissez un mot de passe solide et ne le partagez avec personne. En cas de doute sur votre compte, contactez-nous.</li></ul>
+<p>Attention : un destinataire peut toujours copier, capturer ou transférer ce que vous lui envoyez. Envoyez uniquement à des personnes de confiance.</p>
+<h2>6. Fonction d'appel : en cours de développement</h2>
+<p>Les appels audio et vidéo ne sont pas encore disponibles. Cette fonction est en cours de développement ; elle pourra être ajoutée dans une version future, et cette politique sera alors mise à jour avant son activation.</p>
+<h2>7. Prestataires techniques</h2>
+<ul><li><b>Supabase</b> : base de données, authentification et messagerie en temps réel ;</li><li><b>Telegram (bot)</b> : stockage de fichiers chiffrés ;</li><li><b>Google Firebase Cloud Messaging</b> : envoi des notifications.</li></ul>
+<p>Ils agissent comme sous-traitants et peuvent héberger des données hors de votre pays. Nous ne communiquons vos données à aucune autre personne, sauf obligation légale ou décision de justice.</p>
+<h2>8. Autorisations de l'application</h2>
+<ul><li><b>Microphone</b> : enregistrement des messages vocaux, seulement quand vous l'utilisez ;</li><li><b>Notifications</b> : vous alerter de nouveaux messages ;</li><li><b>Internet, vibreur</b> : fonctionnement normal.</li></ul>
+<p>Vous pouvez retirer ces autorisations dans les réglages du téléphone ; certaines fonctions cesseront alors de marcher.</p>
+<h2>9. Vos droits et la suppression de votre compte</h2>
+<p>Vous pouvez demander l'accès, la correction ou la suppression de vos données, ou vous opposer à un traitement. Pour <b>supprimer votre compte</b> : Paramètres → Supprimer mon compte (action définitive). Vous pouvez aussi nous écrire ; nous répondons au plus tard sous 30 jours. Vous pouvez enfin saisir l'autorité de protection des données de votre pays (au Burkina Faso : la CIL).</p>
+<h2>10. Mineurs</h2>
+<p>L'application est réservée aux personnes de 13 ans et plus ; les mineurs l'utilisent avec l'accord d'un parent ou tuteur. Un compte d'enfant de moins de 13 ans sera supprimé.</p>
+<h2>11. Modifications</h2>
+<p>Nous pouvons faire évoluer cette politique. Les changements importants seront signalés dans l'application. La date en haut indique la version en vigueur.</p>
+<h2>12. Nous contacter</h2>`+CT_FR,
+terms:`<h1>Conditions d'utilisation</h1>
+<p class="m">Version 2.0 – Dernière mise à jour : 30 octobre 2026</p>
+<p>Ces conditions décrivent les règles d'utilisation de TÕÕLé, éditée par <b>CNS.corp</b>. Lisez-les attentivement : elles vous permettent de savoir dans quoi vous vous engagez.</p>
+<div class="box"><b>⚠️ L'essentiel</b><ul>
+<li>L'utilisation de TÕÕLé est <b>libre et volontaire</b>. En créant un compte, vous acceptez ces conditions et la Politique de confidentialité. Si vous n'êtes pas d'accord, n'utilisez pas l'application.</li>
+<li><b>Les messages sont supprimés des serveurs après 15 jours.</b> Un message non reçu dans ce délai ne sera jamais livré.</li>
+<li>Vous restez responsable de ce que vous envoyez.</li>
+<li>Les appels sont en cours de développement et pas encore disponibles.</li></ul></div>
+<h2>1. Votre compte</h2>
+<p>Vous devez avoir au moins 13 ans (les mineurs avec l'accord d'un parent ou tuteur), utiliser un numéro de téléphone valide et des informations exactes. Votre compte est personnel. Vous êtes responsable de votre mot de passe et de l'activité sur votre compte : ne le partagez avec personne.</p>
+<h2>2. Fonctionnement du service</h2>
+<ul><li>Les messages sont <b>conservés 15 jours au maximum</b> sur nos serveurs, le temps de la livraison, puis supprimés définitivement, reçus ou non.</li>
+<li>Nous ne faisons pas de sauvegarde de vos conversations. Perte, vol ou réinitialisation du téléphone : l'historique peut être perdu sans possibilité de récupération.</li>
+<li>Pour recevoir vos messages, connectez-vous au moins une fois dans les 15 jours.</li>
+<li>Les médias sont chiffrés sur votre appareil avant l'envoi (voir Politique de confidentialité).</li></ul>
+<h2>3. Fonctionnalités en développement</h2>
+<p>Certaines fonctions, comme les appels, sont en cours de développement. Elles peuvent être ajoutées, modifiées ou retirées sans préavis, et ne sont pas garanties.</p>
+<h2>4. Règles d'utilisation</h2>
+<p>Il est interdit :</p>
+<ul><li>d'envoyer des contenus illégaux, haineux, violents, menaçants, harcelants ou diffamatoires ;</li>
+<li>de partager des contenus sexuels impliquant des mineurs, ou d'exploiter des mineurs de quelque manière que ce soit ;</li>
+<li>d'usurper une identité, d'escroquer, de harceler ou d'envoyer du spam ;</li>
+<li>de diffuser des virus, de tenter d'accéder sans droit à nos systèmes ou aux comptes d'autrui, de contourner la sécurité ;</li>
+<li>de copier, décompiler, modifier ou revendre l'application, sauf si la loi l'autorise.</li></ul>
+<h2>5. Vos contenus et votre responsabilité</h2>
+<p>Vous restez propriétaire de ce que vous envoyez et en êtes seul responsable. Nous ne lisons pas vos conversations : nous ne pouvons donc pas surveiller les contenus et ne sommes pas responsables de ce que les utilisateurs échangent. Un destinataire peut toujours copier ou capturer vos messages : n'envoyez que ce que vous acceptez de partager.</p>
+<h2>6. Signalement et sanctions</h2>
+<p>Vous pouvez signaler un abus à nos contacts. Nous pouvons suspendre ou supprimer un compte qui enfreint ces conditions ou la loi, et coopérer avec les autorités lorsque la loi l'exige.</p>
+<h2>7. Disponibilité</h2>
+<p>Nous faisons au mieux pour que le service soit stable mais ne garantissons ni l'absence d'interruptions ou d'erreurs, ni la livraison de chaque message. Le service dépend aussi de votre connexion Internet et de votre opérateur.</p>
+<h2>8. Limitation de responsabilité</h2>
+<p>L'application est fournie « en l'état ». Dans la limite permise par la loi, CNS.corp n'est pas responsable des messages non livrés après 15 jours, des pertes de données dues à votre appareil, de la divulgation de votre mot de passe, ni des dommages indirects. Rien ici n'exclut une responsabilité qui ne peut l'être légalement.</p>
+<h2>9. Propriété intellectuelle</h2>
+<p>Le nom TÕÕLé, le logo, le design et le code de l'application appartiennent à CNS.corp. Vous disposez d'un simple droit d'usage personnel, non exclusif et révocable.</p>
+<h2>10. Fin de l'utilisation</h2>
+<p>Vous pouvez arrêter à tout moment et supprimer votre compte depuis l'application (Paramètres → Supprimer mon compte).</p>
+<h2>11. Modifications</h2>
+<p>Nous pouvons modifier ces conditions ; les changements importants seront annoncés dans l'application. Continuer à l'utiliser vaut acceptation.</p>
+<h2>12. Droit applicable et contact</h2>
+<p>Ces conditions sont régies par le droit du Burkina Faso ; en cas de litige, nous privilégions d'abord une solution amiable.</p>`+CT_FR},
+en:{sub:"Legal information",tabs:{privacy:"Privacy",terms:"Terms of Use"},foot:"© 2026 CNS.corp – All rights reserved",
+privacy:`<h1>Privacy Policy</h1>
+<p class="m">Version 2.0 – Last updated: October 30, 2026</p>
+<p>At TÕÕLé, we want you to know exactly how the app works before you use it. This page is written to be read: please take a moment to go through it.</p>
+<div class="box"><b>⚠️ Please know before you start</b><ul>
+<li><b>Messages are deleted from our servers every 15 days.</b> If your contact has not received your message within that time (phone off, offline, app uninstalled), <b>it will never be delivered</b>.</li>
+<li><b>We cannot recover</b> a message deleted after 15 days, nor restore a lost conversation.</li>
+<li><b>Photos, videos, voice messages and files</b> are encrypted on your phone before sending, then stored through a Telegram bot that only receives unreadable encrypted data.</li>
+<li><b>Voice/video calls are under development</b>: this feature is not available yet.</li></ul></div>
+<div class="box ok"><b>🔒 Our commitment</b><ul>
+<li>We do not read your conversations or view your media.</li>
+<li>We never sell your data and show no advertising.</li>
+<li>You can delete your account at any time, from the app.</li></ul></div>
+<h2>1. Who are we?</h2>
+<p>TÕÕLé is a messaging app published by <b>CNS.corp</b>. CNS.corp is responsible for the data processing described below.</p>
+<h2>2. Data we process</h2>
+<ul><li><b>Account</b>: country code, phone number, password (stored in protected form, never readable by us), and the name and profile photo you choose.</li>
+<li><b>Messages in transit</b>: the encrypted content of your messages, for the time needed to deliver them (15 days maximum).</li>
+<li><b>Technical operating information</b>: sender and recipient identifiers, date and time, size of items, presence status (online, “typing”), your device's notification token. This is necessary to deliver a message.</li></ul>
+<p>We do <b>not</b> collect your location or read your phone contacts without your knowledge.</p>
+<h2>3. Messages: automatic deletion after 15 days</h2>
+<p>A sent message is kept on our servers only to be delivered. It is <b>automatically deleted no later than 15 days</b> after sending, whether received or not. In practice:</p>
+<ul><li>if the recipient connects within 15 days, they receive the message, which then stays on their device;</li>
+<li>after that, the message is erased from our servers and is <b>no longer recoverable</b> by anyone, including us;</li>
+<li>we keep no backup copy of your conversations; history is kept on participants' devices. If you lose or reset your phone, it may be lost permanently.</li></ul>
+<h2>4. Photos, videos, voice messages and files</h2>
+<p>These are <b>encrypted on your device before sending</b>. They are then transferred to a Telegram bot used as technical storage. This bot only receives encrypted data: it sees no image, sound or video, just an unreadable string of characters. Only the recipient's app can decrypt and display them. The related message (including the media reference) is deleted from our servers after 15 days; media not received within that time is no longer accessible from the app.</p>
+<p>Like any third-party service, Telegram applies its own terms; it only handles encrypted files on behalf of TÕÕLé.</p>
+<h2>5. Privacy and account security</h2>
+<ul><li>The content of your messages and media is encrypted; we do not view it and our team does not read your conversations.</li>
+<li>Connections to our servers are secure (HTTPS) and your password is stored in protected form.</li>
+<li>We cannot, and will never, ask for your password. Beware of anyone claiming otherwise.</li>
+<li>No system is infallible. Protect your phone, choose a strong password and share it with no one. If in doubt about your account, contact us.</li></ul>
+<p>Note: a recipient can always copy, screenshot or forward what you send. Only send to people you trust.</p>
+<h2>6. Calling feature: under development</h2>
+<p>Audio and video calls are not available yet. This feature is under development; it may be added in a future version, and this policy will be updated before it is activated.</p>
+<h2>7. Technical providers</h2>
+<ul><li><b>Supabase</b>: database, authentication and real-time messaging;</li><li><b>Telegram (bot)</b>: storage of encrypted files;</li><li><b>Google Firebase Cloud Messaging</b>: notification delivery.</li></ul>
+<p>They act as processors and may host data outside your country. We share your data with no one else, except where required by law or court order.</p>
+<h2>8. App permissions</h2>
+<ul><li><b>Microphone</b>: recording voice messages, only when you use it;</li><li><b>Notifications</b>: alerting you to new messages;</li><li><b>Internet, vibration</b>: normal operation.</li></ul>
+<p>You can withdraw these in your phone settings; some features will then stop working.</p>
+<h2>9. Your rights and account deletion</h2>
+<p>You may request access to, correction or deletion of your data, or object to processing. To <b>delete your account</b>: Settings → Delete my account (permanent). You can also write to us; we reply within 30 days at most. You may also contact your country's data protection authority (in Burkina Faso: the CIL).</p>
+<h2>10. Minors</h2>
+<p>The app is for people aged 13 and over; minors use it with a parent's or guardian's consent. An account belonging to a child under 13 will be deleted.</p>
+<h2>11. Changes</h2>
+<p>We may update this policy. Important changes will be shown in the app. The date at the top shows the current version.</p>
+<h2>12. Contact us</h2>`+CT_EN,
+terms:`<h1>Terms of Use</h1>
+<p class="m">Version 2.0 – Last updated: October 30, 2026</p>
+<p>These terms describe the rules for using TÕÕLé, published by <b>CNS.corp</b>. Please read them carefully: they let you know what you are signing up for.</p>
+<div class="box"><b>⚠️ The essentials</b><ul>
+<li>Using TÕÕLé is <b>free and voluntary</b>. By creating an account, you accept these terms and the Privacy Policy. If you disagree, do not use the app.</li>
+<li><b>Messages are deleted from servers after 15 days.</b> A message not received within that time will never be delivered.</li>
+<li>You remain responsible for what you send.</li>
+<li>Calls are under development and not yet available.</li></ul></div>
+<h2>1. Your account</h2>
+<p>You must be at least 13 (minors with a parent's or guardian's consent), use a valid phone number and accurate information. Your account is personal. You are responsible for your password and activity on your account: share it with no one.</p>
+<h2>2. How the service works</h2>
+<ul><li>Messages are <b>kept 15 days at most</b> on our servers for delivery, then permanently deleted, received or not.</li>
+<li>We make no backups of your conversations. If your phone is lost, stolen or reset, history may be lost without recovery.</li>
+<li>To receive your messages, connect at least once within 15 days.</li>
+<li>Media is encrypted on your device before sending (see Privacy Policy).</li></ul>
+<h2>3. Features under development</h2>
+<p>Some features, such as calls, are under development. They may be added, changed or removed without notice and are not guaranteed.</p>
+<h2>4. Rules of use</h2>
+<p>You must not:</p>
+<ul><li>send illegal, hateful, violent, threatening, harassing or defamatory content;</li>
+<li>share sexual content involving minors, or exploit minors in any way;</li>
+<li>impersonate anyone, scam, harass or spam;</li>
+<li>spread malware, attempt unauthorized access to our systems or others' accounts, or bypass security;</li>
+<li>copy, decompile, modify or resell the app, except where the law allows.</li></ul>
+<h2>5. Your content and responsibility</h2>
+<p>You own what you send and are solely responsible for it. We do not read your conversations, so we cannot monitor content and are not responsible for what users exchange. A recipient can always copy or screenshot your messages: only send what you are happy to share.</p>
+<h2>6. Reporting and sanctions</h2>
+<p>You can report abuse through our contacts. We may suspend or delete an account that breaches these terms or the law, and cooperate with authorities where the law requires.</p>
+<h2>7. Availability</h2>
+<p>We do our best to keep the service stable but guarantee neither freedom from interruptions or errors, nor delivery of every message. The service also depends on your Internet connection and carrier.</p>
+<h2>8. Limitation of liability</h2>
+<p>The app is provided “as is”. To the extent permitted by law, CNS.corp is not liable for messages undelivered after 15 days, data loss due to your device, disclosure of your password, or indirect damages. Nothing here excludes liability that cannot legally be excluded.</p>
+<h2>9. Intellectual property</h2>
+<p>The TÕÕLé name, logo, design and app code belong to CNS.corp. You have only a personal, non-exclusive, revocable right of use.</p>
+<h2>10. Ending use</h2>
+<p>You may stop at any time and delete your account from the app (Settings → Delete my account).</p>
+<h2>11. Changes</h2>
+<p>We may change these terms; important changes will be announced in the app. Continued use means acceptance.</p>
+<h2>12. Governing law and contact</h2>
+<p>These terms are governed by the laws of Burkina Faso; in case of dispute, we first seek an amicable solution.</p>`+CT_EN}};
+document.documentElement.lang=l;
+document.title="TÕÕLé – "+T[l].tabs[d];
+document.getElementById("sub").textContent=T[l].sub;
+var nav="";
+["privacy","terms"].forEach(function(k){nav+='<a class="'+(k===d?"on":"")+'" href="?doc='+k+'&lang='+l+'">'+T[l].tabs[k]+'</a>'});
+var o=l==="fr"?"en":"fr";
+nav+='<a href="?doc='+d+'&lang='+o+'">'+(o==="en"?"English":"Français")+'</a>';
+document.getElementById("n").innerHTML=nav;
 document.getElementById("c").innerHTML=T[l][d];
+document.getElementById("f").textContent=T[l].foot;
 </script></body></html>
