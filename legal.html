@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TÕÕLé – Informations légales</title>
+<style>body{font-family:sans-serif;max-width:720px;margin:auto;padding:20px;line-height:1.6}h1{color:#0a7cff}</style>
+</head><body><div id="c"></div>
+<script>
+var p=new URLSearchParams(location.search);
+var d=p.get("doc")==="terms"?"terms":"privacy";
+var l=p.get("lang")==="en"?"en":"fr";
+var T={
+fr:{privacy:"<h1>Politique de confidentialité</h1><p>À COMPLÉTER : données collectées (numéro de téléphone, messages, médias), usage, stockage, partage, droits de l'utilisateur, contact.</p>",
+    terms:"<h1>Conditions d'utilisation</h1><p>À COMPLÉTER : règles d'usage, comptes, contenus interdits, responsabilités, suspension, contact.</p>"},
+en:{privacy:"<h1>Privacy Policy</h1><p>TO COMPLETE: data collected, usage, storage, sharing, user rights, contact.</p>",
+    terms:"<h1>Terms of Use</h1><p>TO COMPLETE: usage rules, accounts, prohibited content, liability, suspension, contact.</p>"}};
+document.getElementById("c").innerHTML=T[l][d];
+</script></body></html>
